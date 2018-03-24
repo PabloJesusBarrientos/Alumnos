@@ -24,7 +24,7 @@
         android:textSize="30sp"
         android:text="Registrar"
         android:fontFamily="serif-monospace"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/btn_inicializar_bd"
@@ -32,5 +32,15 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="Inicializar BD"
-        android:fontFamily="serif-monospace" />
+        android:fontFamily="serif-monospace"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Créditos"
+        android:textSize="30sp"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/btn_mostrar"/>
+
 </LinearLayout>

@@ -19,6 +19,9 @@
         <activity android:name=".NuevoAlumnoActivity"/>
         <activity android:name=".GestionAlumnoActivity"/>
         <activity android:name=".ListaAlumnosActivity"/>
+        <activity
+            android:name=".CreditosActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
     </application>
 
 </manifest>

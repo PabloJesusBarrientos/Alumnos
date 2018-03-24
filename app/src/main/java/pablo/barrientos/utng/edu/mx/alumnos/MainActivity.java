@@ -3,6 +3,7 @@ package pablo.barrientos.utng.edu.mx.alumnos;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import pablo.barrientos.utng.edu.mx.alumnos.dao.Conexion;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button btnInicializar;
     private Button btnRegistrar;
+    private Button btnMostrarCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +22,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnInicializar = (Button)findViewById(R.id.btn_inicializar_bd);
         btnRegistrar = (Button)findViewById(R.id.btn_registrar);
+        btnMostrarCreditos = (Button)findViewById(R.id.btn_mostrar);
 
         btnRegistrar.setOnClickListener(this);
         btnInicializar.setOnClickListener(this);
+        btnMostrarCreditos.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         getApplicationContext(),ListaAlumnosActivity.class);
                 //Se arranca la actividad
                 startActivity(intPro);
+                break;
+            case R.id.btn_mostrar:
+                Intent i = new Intent(this, CreditosActivity.class);
+                startActivity(i);
                 break;
         }
 

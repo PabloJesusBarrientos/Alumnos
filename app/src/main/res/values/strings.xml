@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Alumnos</string>
+
+    <string name="texto_creditos">
+        Créditos\n\n
+        Asignatura: Programación de Aplicaciones\n
+        Grupo: GITI9083-S\n
+        Alumno: Pablo Jesús Barrientos Sánchez
+    </string>
+
 </resources>
